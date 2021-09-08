@@ -1,0 +1,94 @@
+.whole-square {
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 20px;
+  width: 700px;
+  display: block;
+  margin: 40px auto;
+  font-family: "Lobster", cursive;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(43, 122, 226);
+  margin: 10px auto;
+}
+
+#celcius-button {
+  border-radius: 5px;
+  border: 1px solid#ced4da;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+}
+
+#celcius-button:hover {
+ background-color: #2c79e2;
+ color: azure;
+}
+
+#fahrenheit-button {
+  border-radius: 5px;
+  border: 1px solid#ced4da;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+#fahrenheit-button:hover {
+ background-color: #2c79e2;
+ color: azure;
+}
+
+#ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#city-name-result {
+  margin: 0 ;
+}
+
+#today-date {
+  margin: 0;
+}
+
+.main-section {
+  margin: 30px;
+  padding: 15px ;
+
+}
+.row {
+padding-left: 70px;
+}
+.city-name {
+  font-size: 40px;
+}
+
+.main-icon {
+  color: coral;
+  padding-left : 20px;
+  font-size: 25px;
+}
+
+.card-date {
+  padding-top: 8px;
+  margin-left: 8px;
+}
+.card-weather-icon {
+  font-size: 40px;
+  color: coral;
+  text-align: center;
+  padding: 5px;
+}
+
+.card-temperature {
+  text-align: center;
+}
+.card-high-temperature {
+  color: crimson;
+}
+
+.card-low-temperature {
+  color: rgb(53, 102, 235);
+}
