@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0fa44ac669.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="whole-square">
+        <h1>
+          Weather Forecast
+        </h1>
+        <form class = "row">
+            <div class="col-8">
+            <input 
+                  type="search" 
+                  placeholder="Enter city name" 
+                  class =form-control 
+                  id ="form-input-city"
+            />
+            </div>
+            <div class="col-2">
+            <input 
+                  type="submit" 
+                  value="Search" 
+                  class = "form-control btn btn-outline-primary"
+            />
+            </div>
+            <div class="col-2">
+               <button 
+               type="submit" 
+               class="btn btn-outline-primary"
+               id="current-location-button">
+               <i class="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
+        </form>
+        <div class="main-section">
+          <div class="row">
+            <div class = "col-6">
+            <h2 class="city-name" id="city-name-result">
+              Tokyo
+            </h2>
+            <h2 id="city-temp">
+              20°C
+            </h2>
+            <br />
+            <ul id = "ul">
+            <li class = "today-day" id = "today-date">
+              Sunday 12:00
+            </li>
+              <li>
+            <span class="card-high-temperature" id = "max-temp">25 °C </span>
+            /
+              <span class="card-low-temperature" id = "min-temp"> 10 °C  </span>
+              <button id = "celcius-button">
+          °C
+        </button>
+        <button id = "fahrenheit-button">
+          °F
+        </button>
+        </li>
+              <li id="description">
+              Clear Sky
+             </li>
+              <li>
+              Feels like: <span id="feels-like"></span>
+              </li>
+              <li>
+              Humidity: <span id="humidity"></span>
+              </li>
+          </ul>
+          </div>
+
+          <div class ="col-6" id = "icon-section"> 
+          <span class="main-icon">
+            <i class="fas fa-sun fa-9x"></i>
+          </span>
+          </div>
+        </div>
+        </div>
+
+        <div class="card-group">
+          <div class="card">
+            <div class="cards-head">
+              <h5 class="card-date">Mon</h5>
+            </div>
+            <div class="card-weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="card-temperature">
+              <span class="card-high-temperature">°C </span>
+              /
+              <span class="card-low-temperature"> °C </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cards-head">
+              <h5 class="card-date">Tue</h5>
+            </div>
+            <div class="card-weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="card-temperature">
+              <span class="card-high-temperature">°C </span>
+              /
+              <span class="card-low-temperature"> °C </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cards-head">
+              <h5 class="card-date">Wed</h5>
+            </div>
+            <div class="card-weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="card-temperature">
+              <span class="card-high-temperature" >°C </span>
+              /
+              <span class="card-low-temperature"> °C </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cards-head">
+              <h5 class="card-date">Thu</h5>
+            </div>
+            <div class="card-weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="card-temperature">
+              <span class="card-high-temperature">°C </span>
+              /
+              <span class="card-low-temperature"> °C </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cards-head">
+              <h5 class="card-date">Fri</h5>
+            </div>
+            <div class="card-weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="card-temperature">
+              <span class="card-high-temperature">°C </span>
+              /
+              <span class="card-low-temperature"> °C </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/weather.js"></script>
+  </body>
+</html>
