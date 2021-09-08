@@ -92,3 +92,7 @@ padding-left: 70px;
 .card-low-temperature {
   color: rgb(53, 102, 235);
 }
+
+small {
+  font-weight: 400;
+}
